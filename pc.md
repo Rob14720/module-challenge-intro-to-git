@@ -9,17 +9,31 @@ Now that you are all set up, it's time to learn a little more about the tools of
 or save it for your own personal projects by uploading it to GitHub by using push.
 
 2. What is the difference between Git and GitHub?
- Git is the software here the coding actuall happens. GitHub is the domain where it's accessible and is stored in
-a cloud.
+ Git is the software where the coding happens. GitHub is the domain where it's accessible and is stored in a cloud.
 
 3. Why do we create a branch?
-  We create branches so that we place our work in a seperate environment where it can then be reviewed by seniors
-without the worry of it effecting the core files right away (which would be called the main branch). The employer
-or the worker themself would then have it to look at and troubleshoot for bugs before finally merging it.
+  We create branches so that when we push our work to GitHub and look at the repository, you can compare your work
+to the master file. This allows a review of your work before it's finally merged with the master (main) file.
 
 4. What is the purpose of a Pull Request?
-  
+A pull request is to signal that you have done work and that you're asking for it to be merged with the main file.
+You will most likely be pulling your branch that you named and worked in to Github to merge with the main file.
+It will allow for anyone involved in the project to review your work for errors.
+ 
 5. What is the command you can use to switch between branches? For example you are working on the FIRSTNAME-LASTNAME branch and you want to switch back to main.
+The "git checkout" command is how to switch between branches. the "git checkout -b (branch-name)" will create new branches.
+To navigate branches that already exist you would simply command "git checkout (branch)" ex: 
+"git checkout main" would get you back to the main branch.
+
 6. Explain the difference between `git fetch`, `git merge` and `git pull`. What does each command do?
+They all move torwards the same thing. git fetch and git merge perform in two steps what git pull does in one.
+Git fetch can be very effective in avoiding errors and merge conflicts as it shows you crucial information about changes
+that have been made. After reviewing the etch you would git merge to perform the actual "pull".
+
 7. What is a merge conflict?
+A merge conflict is when something is odd about the pull. This would be like if another coder pull requested the same
+files with similar changes that you just made. 
+
 8. How do you resolve a merge conflict?
+One way you could resolve a conflict would be to abort your current pull request which would reset everything to before
+you made the request and then wait for the other coder to have their work reviewed/ merged instead.
